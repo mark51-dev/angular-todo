@@ -9,11 +9,11 @@ import {TodoItemInterface} from '../interface/todo-item.interface';
 export class TodoComponent implements OnInit {
   todoListItems: TodoItemInterface[] = [];
 
-  addTodoItemToList(newTodoItem): void {
+  addTodoItemToList(newTodoItem: TodoItemInterface): void {
     this.todoListItems.push(newTodoItem);
   }
 
-  removeTodoItemFromList(idx) {
+  removeTodoItemFromList(idx: number) {
     this.todoListItems = this.todoListItems.filter((todoItem, index) => index !== idx);
   }
 
