@@ -1,0 +1,3 @@
+<app-todo-input (addTodoItemToList)="addTodoItemToList($event)"></app-todo-input>
+<app-todo-item *ngFor="let todoItem of todoListItems; index as idx" [todoItem]="todoItem" (click)="removeTodoItemFromList(idx)"></app-todo-item>
+

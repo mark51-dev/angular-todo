@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+  <label>
+    Title <input type="text" formControlName="title">
+  </label>
+
+  <label>
+    Text <input type="text" formControlName="text">
+  </label>
+  <button type="submit" [disabled]="form.invalid">Add</button>
+</form>
+
+
+
