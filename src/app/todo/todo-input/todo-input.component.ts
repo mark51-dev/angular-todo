@@ -18,7 +18,7 @@ export class TodoInputComponent implements OnInit {
     });
   }
 
-  onSubmit(event: Event) {
+  onSubmit(event: Event): void {
     event.preventDefault();
     this.addTodoItemToList.emit(this.form.value);
     this.form.reset();

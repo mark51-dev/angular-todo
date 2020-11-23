@@ -13,7 +13,7 @@ export class TodoComponent implements OnInit {
     this.todoListItems.push(newTodoItem);
   }
 
-  removeTodoItemFromList(idx: number) {
+  removeTodoItemFromList(idx: number): void {
     this.todoListItems = this.todoListItems.filter((todoItem, index) => index !== idx);
   }
 
